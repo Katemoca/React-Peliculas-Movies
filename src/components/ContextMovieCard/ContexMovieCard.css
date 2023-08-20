@@ -1,0 +1,29 @@
+.ulcontainer ul {
+    margin: 0; /* Reset the default margin */
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px; 
+  }
+  
+  /* Other styles for .ulcontainer and its children */
+  .ulcontainer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+  }
+  
+  /* Rest of your styles */
+  
+
+@media (max-width: 560px){
+    .ulcontainer {
+        grid-template-columns: 100%;
+    }
+}
